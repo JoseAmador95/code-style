@@ -51,6 +51,7 @@ Checks: >
   google-readability-todo,
   google-runtime-int,
   readability-function-cognitive-complexity,
+  readability-function-size,
   cert-dcl21-cpp,
   cert-flp30-c,
   -clang-analyzer-security.insecureAPI.DeprecatedOrUnsafeBufferHandling,
@@ -88,8 +89,8 @@ WarningsAsErrors: >
   readability-uppercase-literal-suffix,
   google-runtime-int,
   readability-function-cognitive-complexity,
+  readability-function-size,
   cert-flp30-c,
-HeaderFilterRegex: 'xipc*.h'
 AnalyzeTemporaryDtors: false
 FormatStyle:     file
 CheckOptions:
@@ -129,3 +130,9 @@ CheckOptions:
     value:           camelBack
   - key:             readability-identifier-naming.ConstantCase
     value:           camelBack
+  - key:             readability-function-cognitive-complexity.Threshold
+    value:           15
+  - key:             readability-function-cognitive-complexity.IgnoreMacros
+    value:           true
+  - key:             readability-function-size.NestingThreshold
+    value:           5
