@@ -31,7 +31,6 @@ Checks: >
   cppcoreguidelines-avoid-goto,
   hicpp-multiway-paths-covered,
   hicpp-signed-bitwise,
-  # llvm-header-guard,
   llvm-include-order,
   misc-definitions-in-headers,
   misc-misplaced-const,
@@ -93,7 +92,6 @@ WarningsAsErrors: >
   readability-function-cognitive-complexity,
   readability-function-size,
   cert-flp30-c,
-AnalyzeTemporaryDtors: false
 FormatStyle:     file
 CheckOptions:
   - key:             bugprone-assert-side-effect.AssertMacros
